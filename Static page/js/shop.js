@@ -35,7 +35,7 @@ $(function() {
 			$("div.top_menu").css("top", "0px");
 
 		} else {
-			$("div.top_menu").css("top", "101px");
+			$("div.top_menu").css("top", 101 - $(window).scrollTop()  + "px");
 		}
 	});
 

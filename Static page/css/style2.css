@@ -1390,13 +1390,13 @@ a:hover, a:focus  {
   text-decoration: none;
   color: #fff;
   background: #ee2d24;
-  padding: 14px;
+  padding: 14px 58px 14px 14px;
 }
 
 .double-banner-price-phone
 .double-banner-price-sm-name {
   background: #ee2d24;
-  padding: 0 0 14px 14px;
+  padding: 0 14px 14px 14px;
 }
 
 .shadowed {
