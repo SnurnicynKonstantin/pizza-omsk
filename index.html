@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <title>Доставка пиццы в Омске || Prime Pizza — вкусная пицца!</title>
-      <meta name="description" content="Prime Pizza — современная служба доставки вкусной пиццы. Мы делаем вкусную пиццу и предоставляем клиентам безупречный и эксклюзивный сервис!" />
+      <title>Доставка пиццы в Омске || Твоя Пицца — вкусная пицца!</title>
+      <meta name="description" content="Твоя Пицца — современная служба доставки вкусной пиццы. Мы делаем вкусную пиццу и предоставляем клиентам безупречный и эксклюзивный сервис!" />
       <meta name="keywords" content="бесплатная доставка пиццы, доставка пиццы на дом, заказ пиццы в Омске, заказать пиццу
          " />
       <!-- check -->
@@ -39,9 +39,72 @@
       <div class="main">
          <div class="top_menu" style="top: 101px">
             <div class="block_inner">
-               dafsdf
+               <ul>
+                  <li id="pizza_button">
+                     <a href="#">Пицца</a>
+                  </li>
+                  <li id="hachapuri_button">
+                     <a href="#">Хачапури</a>
+                  </li>
+                  <li id="shaurma_button">
+                     <a href="#">Шаурма</a>
+                  </li>
+                  <li id="koktely_button">
+                     <a href="#">Молочные коктейли</a>
+                  </li>
+                  <li id="napitki_button">
+                     <a href="#">Напитки</a>
+                  </li>
+               </ul>
+               <a class="logout_link" href="javascript:show_delivery_form();">Условия доставки</a>
             </div>
          </div>
+         <script type="text/javascript">
+            $("#pizza_button").click(function() {
+               $("html, body").animate({
+                  scrollTop: ($("#pizza").offset().top) - 60 + "px"
+               }, {
+                  duration: 500
+               });
+               return false;
+            });
+
+            $("#hachapuri_button").click(function() {
+               $("html, body").animate({
+                  scrollTop: ($("#hachapuri").offset().top) - 60 + "px"
+               }, {
+                  duration: 800
+               });
+               return false;
+            });
+
+            $("#shaurma_button").click(function() {
+               $("html, body").animate({
+                  scrollTop: ($("#shaurma").offset().top) - 60 + "px"
+               }, {
+                  duration: 800
+               });
+               return false;
+            });
+
+            $("#koktely_button").click(function() {
+               $("html, body").animate({
+                  scrollTop: ($("#koktely").offset().top) - 60 + "px"
+               }, {
+                  duration: 800
+               });
+               return false;
+            });
+
+            $("#napitki_button").click(function() {
+               $("html, body").animate({
+                  scrollTop: ($("#napitki").offset().top) - 60 + "px"
+               }, {
+                  duration: 800
+               });
+               return false;
+            });
+         </script>
          <!-- 2callback -->
          <div id="cab_callback_start"></div>
          <script type="text/javascript" src="https://2cab.ru/widget/script/9bbe54bfc14a75800d2da9b362eed5fe.js"></script><!-- 2callback -->
@@ -87,21 +150,18 @@
                   <img class="green-legend-item-image" src="pix/green-legend-item-1.png" alt="33 см">
                   <div class="green-legend-item-text">Мы делаем большую<br>пиццу – 33 см</div>
                </div>
-               <!--.green-legend-item-->
                <div class="green-legend-item green-legend-item-2">
                   <img class="green-legend-item-image" src="pix/green-legend-item-2.png" alt="2–3 мм">
                   <div class="green-legend-item-text">На тонком тесте,<br>всего 2–3 мм</div>
                </div>
-               <!--.green-legend-item-->
                <div class="green-legend-item green-legend-item-3">
                   <img class="green-legend-item-image" src="pix/green-legend-item-3.png" alt="8 кусков">
                   <div class="green-legend-item-text">И разрезаем<br>на 8 кусков</div>
                </div>
-               <!--.green-legend-item-->
             </div>
             <div class="prods_list container">
 
-               <h2 id="head-38"><span>Пицца</span></h2>
+               <h2 id="pizza"><span>Пицца</span></h2>
                <div class="catalog_descr">
                   <p>Если вы будете проездом в Неаполе, обязательно загляните в &laquo;Антика Пиццерия Порт Альба&raquo; — там готовят настоящую итальянскую пиццу. Но есть способ попроще — закажите её у нас, разницы вы не заметите.</p>
                </div>
@@ -446,7 +506,7 @@
                </ul>
 
 
-               <h2 id="head-38"><span>Хачапури</span></h2>
+               <h2 id="hachapuri"><span>Хачапури</span></h2>
                <div class="catalog_descr">
                   <p>Грузинская кухня всегда отличалась невероятным обилием вкусных и разнообразных блюд, умелым сочетанием в них всевозможных специй, насыщенностью тонких ароматов и какой-то таинственностью в названиях блюд. Например, хачапури.</p>
                </div>
@@ -498,7 +558,7 @@
                </ul>
 
 
-               <h2 id="head-38"><span>Шаурма</span></h2>
+               <h2 id="shaurma"><span>Шаурма</span></h2>
                <div class="catalog_descr">
                   <p>Шаурма - блюдо, которое все мы так любим, не отказывайте себе в наслаждении! Секрет прост – вкусно, сытно, удобно! Для тех, кто любит вкусно поесть, но ценит свое время.</p>
                </div>
@@ -604,7 +664,7 @@
                </ul>
 
 
-               <h2 id="head-38"><span>Молочные коктейли</span></h2>
+               <h2 id="koktely"><span>Молочные коктейли</span></h2>
                <div class="catalog_descr">
                   <p>Вы можете предложить в жаркую летнюю пору что-то лучше, чем прохладный, освежающий молочный коктейль? Ведь это то, что так любят и дети, и взрослые.</p>
                </div>
@@ -717,7 +777,7 @@
                </ul>
 
 
-               <h2 id="head-38"><span>Напитки</span></h2>
+               <h2 id="napitki"><span>Напитки</span></h2>
                <ul class="clearfix" style="width: 960px;">
 
                   <li class="first"> <!-- 24 -->
@@ -819,7 +879,7 @@
                         <img class="pic" src="./uploads/position/orbit.jpg" alt="Жевательная резинка Orbit" title="" />
                      </a>
                      <div class="buy_block">
-                        <span class="price"><span id="multi22">29</span><span class="rub"></span></span>
+                        <span class="price"><span id="multi22">30</span><span class="rub"></span></span>
                      </div>
                      <span class="title" style="marhin-left:0px"><div class="numeration">31</div>Жевательная резинка Orbit</span>
                   </li>
@@ -829,7 +889,7 @@
                         <img class="pic" src="./uploads/position/skittles.jpg" alt="skittles" title="" />
                      </a>
                      <div class="buy_block">
-                        <span class="price"><span id="multi22">45</span><span class="rub"></span></span>
+                        <span class="price"><span id="multi22">35</span><span class="rub"></span></span>
                      </div>
                      <span class="title" style="marhin-left:0px"><div class="numeration">32</div>Skittles</span>
                   </li>
@@ -837,37 +897,9 @@
                </ul>
 
 
+            <div class="layout" style="display: none;" onclick="close_form()"></div>
+            <div class="windows"></div>
 
-            <div class="break"></div>
-            <div id="parent_popup" style="display: none">
-               <div id="sms_popup">
-                  <div id="code_live_time" style="display: none;">180</div>
-                  <div id="request_form">
-                     <form method="POST" id="form_id">
-                        <br>
-                        <p style="margin-left:20px;"><input type="text" id="sms_phone" name="phone" size="20" maxlength="10" autocomplete="off"></p>
-                        <p style="font-size:9px;margin-left:20px;color:#919191">Номер сотового телефона</p>
-                        <br>
-                        <p style="margin-left:20px;"><input id="sendButton" style="padding:5px;" type="button" value="Отписаться от рассылки" onclick="AjaxSendSms('result_div_id', 'form_id')"></p>
-                     </form>
-                  </div>
-                  <div id="confirm_form" style="display: none;">
-                     <form method="POST" id="confirm_id">
-                        <br>
-                        <input id="code_id" type="hidden" name="code_id">
-                        <p style="text-align: center;"><span id="timer" style="font-size:25px; font-weight:bold; color:green">180</span><span style="font-weight:bold;"> сек.</span></p>
-                        <br>
-                        <p style="margin-left:20px;"><input type="text" id="sms_code" autocomplete="off" name="code" size="4" maxlength="4"> </p>
-                        <p style="font-size:17px;margin-left:20px;color:#919191">Код подтвержения</p>
-                        <br>
-                        <p style="text-align: center;"><input id="confirmButton" style="padding:5px;" type="button" value="Подтвердить" onclick="AjaxSmsConfirm('result_div_id', 'confirm_id')"></p>
-                     </form>
-                  </div>
-                  <br>
-                  <div id="success_message" style="font-weight:bold;text-align: center;font-size:20px;"></div>
-                  <div id="error_message" style="font-weight:bold; text-align: center; color: red"></div>
-               </div>
-            </div>
          </div>
       </div>
       <div class="footer">
@@ -885,15 +917,10 @@
                </p>
             </div>
             <div class="copy">
-               <span class="copy_row">&copy; 2013 Prime Pizza — доставка пиццы в Омске</span><br>
+               <span class="copy_row">&copy; 2017 Твоя Пицца — доставка пиццы в Омске</span><br>
                <span class="copy_row">Сайт разработал Снурницын Константин. Email: ks_on_v@mail.ru</span>
             </div>
-            <div class="counter">
-               <!-- Counters -->
-            </div>
-            <div class="break"></div>
          </div>
       </div>
-      <div class="windows_info"></div>
    </body>
 </html>

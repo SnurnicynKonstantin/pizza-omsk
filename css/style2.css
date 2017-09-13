@@ -35,7 +35,13 @@ body {
 a {
 	color: #06b1f1;
 	outline: 0;
+	/*font-size: 20px;*/
 	text-decoration: underline;
+}
+
+.top_menu a {
+	font-size: 20px;
+	text-decoration: none;
 }
 
 a:hover {color: #f15f10;}
@@ -194,7 +200,8 @@ img.logo_small {
 
 .top_menu ul {
 	float: left;
-	margin: 0 0 0 100px;
+	/*margin: 0 0 0 100px;*/
+	margin: 0 0 0 10px;
 	padding: 0;
 }
 
@@ -223,12 +230,12 @@ img.logo_small {
 .logout_link {
 	position: absolute;
 	top: 10px;
-	right: 0;
+	right: 40px;
 	padding-left: 12px;
 	width: 145px;
-	font-size: 14px;
+	font-size: 20px;
 	white-space: nowrap;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	/*background: url('../pix/icon_logout.png') no-repeat 0 1px;*/
 }
 

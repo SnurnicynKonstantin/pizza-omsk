@@ -35,13 +35,7 @@ $(function() {
 			$("div.top_menu").css("top", "0px");
 
 		} else {
-			// $("div.top_menu").css("top", "101px");
-			var h = $("#alertNotWorking").height() + 155;
-			//console.log(h);
-			if($("#alertNotWorking").length > 0)
-				$("div.top_menu").css("top", h-$(window).scrollTop()+"px");
-			else
-				$("div.top_menu").css("top", 101-$(window).scrollTop()+"px");
+			$("div.top_menu").css("top", "101px");
 		}
 	});
 
