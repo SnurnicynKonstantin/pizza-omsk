@@ -4,7 +4,8 @@
   "description": "Order pizza Omsk",
   "scripts": {
     "start": "npm-run-all --parallel open:src lint:watch",
-    "build": "webpack --config ./webpack.config.dev.js",
+    "build": "NODE_ENV=production webpack --config ./webpack.config.js",
+    "webpack": "webpack",
     "open:src": "babel-node tools/runServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch"

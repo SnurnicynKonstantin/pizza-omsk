@@ -3,14 +3,16 @@ import {bindActionCreators} from 'redux';
 import { connect } from 'react-redux';
 import Menu from './MenuContainer';
 import Head from './HeadContainer';
+import Content from './ContentContainer';
 
 class App extends Component {
 
     render() {
         return (
-            <div className="main">
+            <div>
                 <Menu/>
                 <Head/>
+                <Content/>
                 <h1>App</h1>
                 {this.props.children}
             </div>

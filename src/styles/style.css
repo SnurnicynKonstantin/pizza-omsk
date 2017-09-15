@@ -72,6 +72,16 @@ div.center div.content p {margin-top: 3px;margin-bottom: 20px;}
 	height: 144px;
 }
 
+.head .logo a .divForLogo{
+	width: 400px;
+	height: 54px;
+	background: url('../../textures/pix/logo-01.png') no-repeat;
+}
+
+.head.container {
+	width: 970px;
+}
+
 .order_page div.head {height: 86px;line-height: 18px;}
 
 div.head h1 {margin: 0;}
@@ -1218,6 +1228,28 @@ a {
   float:left;
   margin:2px 0 0 1px;
 }
+
+.green-legend-item-1
+.green-legend-item-image {
+  background: url('../../textures/pix/green-legend-item-1.png') no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.green-legend-item-2
+.green-legend-item-image {
+	background: url('../../textures/pix/green-legend-item-2.png') no-repeat;
+	width: 35px;
+	height: 35px;
+}
+
+.green-legend-item-3
+.green-legend-item-image {
+	background: url('../../textures/pix/green-legend-item-3.png') no-repeat;
+	width: 35px;
+	height: 35px;
+}
+
 .green-legend-item-text{
   color: white;
   font-weight: 500;
@@ -1271,12 +1303,43 @@ a {
 
 
 /*double-pizza-slide*/
+
+.banner_block .container {
+	width: 970px;
+}
+
+.da-slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.da-slider {
+	width: 100%;
+	min-width: 520px;
+	height: 496px;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: background-position 1.4s ease-in-out 0.3s;
+	-moz-transition: background-position 1.4s ease-in-out 0.3s;
+	-o-transition: background-position 1.4s ease-in-out 0.3s;
+	-ms-transition: background-position 1.4s ease-in-out 0.3s;
+	transition: background-position 1.4s ease-in-out 0.3s;
+}
+
+.da-slider .da-slide.one {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(../../textures/pix/bg.jpg) top center no-repeat;
+}
+
 .double-banner-price-left,
 .double-banner-price-right,
 .double-banner-price-phone{
   margin-top:-74px;
   color:white;
-  font-family: 'Roboto',sans-serif;
+  /*font-family: 'Roboto',sans-serif;*/
 }
 .double-banner-price-left{
   float:left;
@@ -1340,11 +1403,16 @@ a:hover, a:focus  {
   margin: 5px 5px 0 0;
 }
 
-.double-banner-price-phone a {
+.double-banner-price-lg-name a {
   text-decoration: none;
   color: #fff;
   background: #ee2d24;
   padding: 14px 58px 14px 14px;
+}
+
+.double-banner-price-lg-name a:hover {
+	text-decoration: none;
+	color: #fff;
 }
 
 .double-banner-price-phone

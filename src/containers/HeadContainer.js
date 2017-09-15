@@ -7,7 +7,7 @@ class HeadContainer extends Component {
         return (
             <div className="head container">
                 <div className="logo">
-                    <a href="/"><img src="textures/pix/logo-01.png" alt="Доставка вкусной пиццы" title=""/></a>
+                    <a href="/"><div className="divForLogo"></div></a>
                 </div>
             </div>
         );
