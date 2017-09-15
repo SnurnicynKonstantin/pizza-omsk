@@ -1018,6 +1018,10 @@ ul.radio_list li {
 
 #skypedetectionswf {width: 0 !important;height: 0 !important;}
 
+footer_in container{
+	width: 970px;
+}
+
 .footer {
 	/*position:relative;
 	*/
@@ -1253,7 +1257,7 @@ a {
 .green-legend-item-text{
   color: white;
   font-weight: 500;
-  font-family: 'Roboto',sans-serif;
+  /*font-family: 'Roboto',sans-serif;*/
   font-size: 16px;
   width: 181px;
   float: right;
