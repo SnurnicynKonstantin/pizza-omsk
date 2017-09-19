@@ -541,6 +541,7 @@ textarea {
 .prods_list ul {
 	margin: 36px 0 0;
 	padding: 0;
+	overflow: auto;
 }
 
 .prods_list ul li {
@@ -566,7 +567,7 @@ textarea {
 .buy_block a {color: #fff;text-decoration: none;}
 .buy_block_added a {color: #8c825c;}
 .buy_block .price {float: left;padding: 1px 0 2px 0;font-size: 26px;font-weight: bold;}
-/*.buy_block .price .rub {display: inline-block;margin-left: 9px;width: 16px;height: 19px;background: url('../pix/rub3.png') no-repeat 0 0;}*/
+.buy_block .price .rub {display: inline-block;margin-left: 9px;width: 16px;height: 19px;background: url('../../textures/pix/rub3.png') no-repeat 0 0;}
 /*.buy_block_added .price .rub {background: url('../pix/rub4.png') no-repeat 0 0;}*/
 .buy_block .buy_btn {float: right;margin: 0 0 0 9px;padding: 0 0 0 11px;background: url('../../textures/pix/buy_block_sp.png') no-repeat 0 0;}
 .buy_block .buy_btn span {display: block;margin: -3px 0 -3px;line-height: 11px; font-size: 11px;}
@@ -1309,7 +1310,7 @@ a {
 /*double-pizza-slide*/
 
 .banner_block .container {
-	width: 970px;
+	width: 990px;
 }
 
 .da-slide {
@@ -1395,7 +1396,7 @@ a:hover, a:focus  {
 /*double-pizza-slide*/
 
 .numeration {
-  height: 30px;
+  height: 35px;
   width: 35px;
   border-radius: 50%;
   background: red;
@@ -1428,3 +1429,32 @@ a:hover, a:focus  {
 .shadowed {
   -webkit-box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.6);-moz-box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.6);box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.6);
 }
+
+/* Pictures */
+.margarita-s { 	background: url('../../textures/position/margarita-s.jpg') no-repeat; width: 460px; height: 306px; }
+.margarita-b { 	background: url('../../textures/position/margarita-b.jpg') no-repeat; width: 460px; height: 306px; }
+.semeinaya-s { 	background: url('../../textures/position/semeinaya-s.jpg') no-repeat; width: 460px; height: 306px; }
+.semeinaya-b { 	background: url('../../textures/position/semeinaya-b.jpg') no-repeat; width: 460px; height: 306px; }
+.hachapuri-adj-s { 	background: url('../../textures/position/hachapuri-adj-s.jpg') no-repeat; width: 460px; height: 306px; }
+.hachapuri-adj-b { 	background: url('../../textures/position/hachapuri-adj-b.jpg') no-repeat; width: 460px; height: 306px; }
+.hachapuri-class-s { 	background: url('../../textures/position/hachapuri-class-s.jpg') no-repeat; width: 460px; height: 306px; }
+.hachapuri-class-b { 	background: url('../../textures/position/hachapuri-class-b.jpg') no-repeat; width: 460px; height: 306px; }
+
+/* Ingredients */
+td .sous-tomatniy { background: url('../../textures/ingredients/sous-tomatniy.png') no-repeat; width: 26px; height: 26px;}
+.sous-tomatniy:after { content: 'Томатный соус'; }
+td .mocarella { background: url('../../textures/ingredients/mocarella.png') no-repeat; width: 26px; height: 26px;}
+.mocarella:after { content: 'Сыр Моцарелла'; }
+td .pomidor { background: url('../../textures/ingredients/pomidor.png') no-repeat; width: 26px; height: 26px;}
+.pomidor:after { content: 'Томаты'; }
+td .oregano { background: url('../../textures/ingredients/oregano.png') no-repeat; width: 26px; height: 26px;}
+.oregano:after { content: 'Орегано'; }
+td .vetchina { background: url('../../textures/ingredients/vetchina.png') no-repeat; width: 26px; height: 26px;}
+.vetchina:after { content: 'Ветчина'; }
+
+td .suluguni { background: url('../../textures/ingredients/suluguni.png') no-repeat; width: 26px; height: 26px;}
+.suluguni:after { content: 'Сыр Сулугуни'; }
+td .brinza { background: url('../../textures/ingredients/brinza.png') no-repeat; width: 26px; height: 26px;}
+.brinza:after { content: 'Брынза'; }
+td .yaico { background: url('../../textures/ingredients/yaico.png') no-repeat; width: 26px; height: 26px;}
+.yaico:after { content: 'Куриное яйцо'; }
