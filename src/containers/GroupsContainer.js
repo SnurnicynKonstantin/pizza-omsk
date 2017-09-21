@@ -1,11 +1,26 @@
 import React , { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
-import GroupTitle from '../components/GroupTitleComponent';
-import GroupDescription from '../components/GroupDescriptionComponent';
-import GroupContent from '../components/GroupContentComponent';
+import {bindActionCreators} from 'redux';
+import GroupTitle from '../components/main/GroupTitleComponent';
+import GroupDescription from '../components/main/GroupDescriptionComponent';
+import GroupContent from '../components/main/GroupContentComponent';
 import Groups from '../data/groups';
+import * as basketActions from '../actions/basketActions';
+
 
 class GroupsContainer extends Component {
+    constructor(props) {
+        super(props);
+
+        let { dispatch } = this.props;
+        this.basketActions = bindActionCreators(basketActions, dispatch);
+
+        this.buyItemHandler = this.buyItemHandler.bind(this);
+    }
+
+    buyItemHandler(item) {
+        this.basketActions.addItem(item);
+    }
 
     render() {
 
@@ -14,8 +29,8 @@ class GroupsContainer extends Component {
         Groups.forEach(function(group) {
             groups.push(<GroupTitle attributes={group}/>);
             groups.push(<GroupDescription attributes={group}/>);
-            groups.push(<GroupContent attributes={group}/>);
-        });
+            groups.push(<GroupContent attributes={group} buyItemHandler={this.buyItemHandler}/>);
+        }, this);
 
 
         return (
@@ -27,6 +42,7 @@ class GroupsContainer extends Component {
 }
 
 function mapStateToProps (state) {
+    console.log(state)
     return {
         user: null//state.user
     };

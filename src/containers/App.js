@@ -13,8 +13,6 @@ class App extends Component {
             <div className="main">
                 <Menu/>
                 <Head/>
-                <Content/>
-                <h1>App</h1>
                 {this.props.children}
                 <Footer/>
             </div>

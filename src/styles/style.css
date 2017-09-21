@@ -40,11 +40,13 @@ a {
 }
 
 .top_menu a {
-	font-size: 30px;
+	font-size: 26px;
 	text-decoration: none;
 }
 
-a:hover {color: #f15f10;}
+/*a:hover {color: #f15f10;}*/
+
+a:hover {color: white !important;}
 
 div.center div.content p {margin-top: 3px;margin-bottom: 20px;}
 
@@ -158,7 +160,7 @@ img.logo_small {
 	width: 100%;
 	height: 43px;
 	line-height: 20px;
-	font-size: 16px;
+	font-size: 26px;
 	background: #fff url('../../textures/pix/topmenu_bg.png') repeat-x 0 100%;
 	z-index: 3000;
 }
@@ -166,9 +168,9 @@ img.logo_small {
 .top_menu .block_inner {position: relative;margin: 0 auto;width: 1000px;}
 
 .head_basket {
-	float: left;
+	float: right;
 	padding: 0 0 0 11px;
-	width: 186px;
+	width: 200px;
 	height: 43px;
 	line-height: 41px;
 	color: #fff;

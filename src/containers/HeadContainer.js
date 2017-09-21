@@ -1,5 +1,6 @@
 import React , { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 
 class HeadContainer extends Component {
 
@@ -7,7 +8,7 @@ class HeadContainer extends Component {
         return (
             <div className="head container">
                 <div className="logo">
-                    <a href="/"><div className="divForLogo"></div></a>
+                    <Link to={`/`}><div className="divForLogo"></div></Link>
                 </div>
             </div>
         );

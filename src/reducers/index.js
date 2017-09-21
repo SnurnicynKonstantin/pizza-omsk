@@ -1,10 +1,8 @@
 import {combineReducers} from 'redux';
-// import presentations from './presentationReducer';
-// import user from './userReducer';
+import basket from './basketReducer';
 
 const rootReducer = combineReducers({
-    // presentations,
-    // user
+    basket
 });
 
 export default rootReducer;
