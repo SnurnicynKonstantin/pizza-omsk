@@ -13,3 +13,24 @@ export function addItem(item) {
         item
     };
 }
+
+export function deleteItem(key) {
+    return {
+        type: types.DELETE_ITEM,
+        key
+    };
+}
+
+export function incrementItemCount(key) {
+    return {
+        type: types.INCREMENT_COUNT,
+        key
+    };
+}
+
+export function decrementItemCount(key) {
+    return {
+        type: types.DECREMENT_COUNT,
+        key
+    };
+}

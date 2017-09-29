@@ -6,7 +6,6 @@ class MenuContainer extends Component {
 
     getCount() {
         let counter = 0;
-        console.log("Basket from menu", this.props.basket);
         this.props.basket.forEach(function(item) {
             counter += item.price * item.counter;
         });

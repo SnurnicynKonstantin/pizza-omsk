@@ -42,7 +42,6 @@ class GroupsContainer extends Component {
 }
 
 function mapStateToProps (state) {
-    console.log(state)
     return {
         user: null//state.user
     };

@@ -35,9 +35,7 @@ class ItemComponent extends Component {
 
         return (
             <li className={this.props.position}>
-                <a className="big_images" href="./position/margarita-b.jpg">
-                    <img className={attributes["pic-s"] + " pic"} title=""/>
-                </a>
+                <img className={attributes["pic-s"] + " pic"} title=""/>
                 <div className="buy_block">
                     <a onClick={this.buyItemHandler}>
                         <span className="price">

@@ -5,7 +5,6 @@ import assign from 'lodash/assign';
 import mapValues from 'lodash/mapValues';
 
 export default function basketReducer(state = [], action) {
-    console.log("Reducer: ",action);
 
     switch (action.type) {
         case types.ADD_ITEM: {
@@ -25,12 +24,35 @@ export default function basketReducer(state = [], action) {
         }
 
         case types.DELETE_ITEM:
-            return {};
+            return [
+                ...state.filter(item => item.key !== action.key)
+            ];
 
         case types.GET_ITEMS:
             return [
                 ...state
             ];
+
+        case types.INCREMENT_COUNT: {
+            let countedItem = state.filter(item => item.key === action.key)[0];
+            countedItem.counter++;
+
+            return [
+                ...state.filter(item => item.key !== action.key),
+                countedItem
+            ];
+        }
+
+        case types.DECREMENT_COUNT: {
+            let countedItem = state.filter(item => item.key === action.key)[0];
+            countedItem.counter === 0 ? countedItem.counter = 0 : countedItem.counter--;
+
+            return [
+                ...state.filter(item => item.key !== action.key),
+                countedItem
+            ];
+        }
+
 
         default:
             return state;
