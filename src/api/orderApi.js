@@ -5,7 +5,7 @@ class OrdeApi {
         console.log("DATA", data);
         console.log("BASKET", basket);
 
-        return fetch(serverApi, {
+        return fetch("/sendMail.php", {
             method: "POST",
             headers: {
                 'Accept': 'application/json',

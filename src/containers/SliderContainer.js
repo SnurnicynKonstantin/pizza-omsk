@@ -22,7 +22,7 @@ class ContentContainer extends Component {
                                 <div className="double-banner-price-lg-name">
                                     <a href="tel:+73812501616">+ 7 (3812) 50-16-16 </a>
                                 </div>
-                                <div className="double-banner-price-sm-name">Бесплатная доставка от одной пиццы</div>
+                                <div className="double-banner-price-sm-name">Бесплатная доставка от 600 рублей</div>
                             </div>
                         </div>
                     </div>

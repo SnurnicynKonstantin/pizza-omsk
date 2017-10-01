@@ -13,6 +13,10 @@ class MenuContainer extends Component {
     }
 
     render() {
+        // <li id="koktely_button">
+        //     <a href="#">Молочные коктейли</a>
+        // </li>
+        console.log("path", this.props.location);
         return (
             <div className="top_menu">
                 <div className="block_inner">
@@ -34,9 +38,7 @@ class MenuContainer extends Component {
                         <li id="shaurma_button">
                             <a href="#">Шаурма</a>
                         </li>
-                        <li id="koktely_button">
-                            <a href="#">Молочные коктейли</a>
-                        </li>
+
                         <li id="napitki_button">
                             <a href="#">Напитки</a>
                         </li>

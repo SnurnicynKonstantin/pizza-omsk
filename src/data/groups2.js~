@@ -343,7 +343,7 @@ export default [
     },
     {
         'key': 6,
-        'name': 'Дополнительно',
+        'name': 'Lополнительно',
         'id': '',
         'description': '',
         'content': [
