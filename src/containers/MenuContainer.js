@@ -20,8 +20,7 @@ class MenuContainer extends Component {
                         <div id="main_basket" className="head_basket">
                             <Link to={`/order/`}>Корзина</Link>
                             <span className="sum">
-                                <strong>{this.getCount()}</strong>
-                                <img src="/pix/rub2.png" alt="Р" title="Р"/>
+                                <strong>{this.getCount()} P</strong>
                             </span>
                         </div>
                     </div>

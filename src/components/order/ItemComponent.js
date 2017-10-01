@@ -23,16 +23,17 @@ class ItemComponent extends Component {
     }
 
     render() {
+        const pathToPictures = "https://smart-mirror2.000webhostapp.com/textures/position/";
         return(
             <tr>
                 <td>
-                    <img className={this.props.item["pic-s"] + " order-pic"} title=""/>
+                    <img className="order-pic" src={pathToPictures + this.props.item["pic-s"] + ".jpg"} title=""/>
                 </td>
                 <td>{this.props.item.name}</td>
                 <td>{this.props.item.price}</td>
                 <td>
                     <div className="input-group">
-                        <input type="text" className="form-control" value={this.props.item.counter}/>
+                        <input type="text" className="form-control" value={this.props.item.counter} disabled/>
                         <div className="input-group-btn">
                             <button type="button" className="btn btn-danger" onClick={this.decrementCountHandler}>-</button>
                             <button type="button" className="btn btn-success" onClick={this.incrementCountHandler}>+</button>

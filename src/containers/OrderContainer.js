@@ -4,17 +4,30 @@ import {bindActionCreators} from 'redux';
 import Slider from './SliderContainer';
 import Item from '../components/order/ItemComponent';
 import * as basketActions from '../actions/basketActions';
+import * as orderActions from '../actions/orderActions';
 
 class OrderContainer extends Component {
+
+    getInitialState() {
+        return {
+            telephone: '',
+            name: '',
+            comment: '',
+            adres: ''
+        }
+    }
 
     constructor(props) {
         super(props);
         let { dispatch } = this.props;
         this.basketActions = bindActionCreators(basketActions, dispatch);
+        this.orderActions = bindActionCreators(orderActions, dispatch);
 
-        this.deleteItemHandler = this.deleteItemHandler.bind(this);
-        this.incrementCountHandler = this.incrementCountHandler.bind(this);
-        this.decrementCountHandler = this.decrementCountHandler.bind(this);
+        this.sendMailHandler = this.sendMailHandler.bind(this);
+        this.telephoneChangeHandler = this.telephoneChangeHandler.bind(this);
+        this.adresChangeHandler = this.adresChangeHandler.bind(this);
+        this.nameChangeHandler = this.nameChangeHandler.bind(this);
+        this.commentChangeHandler = this.commentChangeHandler.bind(this);
     }
 
     deleteItemHandler(key) {
@@ -29,6 +42,27 @@ class OrderContainer extends Component {
         this.basketActions.decrementItemCount(key);
     }
 
+    sendMailHandler() {
+        // this.setState({basket: this.props.basket});
+        this.orderActions.sendMail(this.state, this.props.basket);
+    }
+
+    telephoneChangeHandler(e) {
+        this.setState({telephone: e.target.value});
+    }
+
+    adresChangeHandler(e) {
+        this.setState({adres: e.target.value});
+    }
+
+    nameChangeHandler(e) {
+        this.setState({name: e.target.value});
+    }
+
+    commentChangeHandler(e) {
+        this.setState({comment: e.target.value});
+    }
+
     getCount() {
         let counter = 0;
         this.props.basket.forEach(function(item) {
@@ -38,7 +72,6 @@ class OrderContainer extends Component {
     }
 
     render() {
-        console.log(this.props.basket);
         let order = [];
         var byKey = this.props.basket.slice(0);
         byKey.sort(function(a,b) {
@@ -48,9 +81,9 @@ class OrderContainer extends Component {
             order.push(
                 <Item
                     item={item}
-                    deleteItemHandler={this.deleteItemHandler}
-                    incrementCountHandler={this.incrementCountHandler}
-                    decrementCountHandler={this.decrementCountHandler}
+                    deleteItemHandler={this.deleteItemHandler.bind(this)}
+                    incrementCountHandler={this.incrementCountHandler.bind(this)}
+                    decrementCountHandler={this.decrementCountHandler.bind(this)}
                 />
             );
         }, this);
@@ -82,36 +115,52 @@ class OrderContainer extends Component {
                         :
                         <h1 className="order-title">Ваша корзина пуста</h1>
                     }
-                    <form role="form">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <div className="form-group">
-                                    <label>Телефон</label>
-                                    <input className="form-control" placeholder="Телефон"/>
+                    { this.props.basket.length != 0 ?
+                        <form role="form" method="post" action="">
+                            <div className="row">
+                                <div className="col-md-6">
+                                    <div className="form-group">
+                                        <label>Телефон</label>
+                                        <input 
+                                            className="form-control" 
+                                            placeholder="Телефон"
+                                            onChange={this.telephoneChangeHandler}/>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="form-group">
+                                        <label>Адрес</label>
+                                        <input 
+                                            className="form-control" 
+                                            placeholder="Адрес"
+                                            onChange={this.adresChangeHandler}/>
+                                    </div>
+                                </div>
+                            </div><div className="row">
+                                <div className="col-md-6">
+                                    <div className="form-group">
+                                        <label>Имя</label>
+                                        <input 
+                                            className="form-control" 
+                                            placeholder="Имя"
+                                            onChange={this.nameChangeHandler}/>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="form-group">
+                                        <label>Комментарий</label>
+                                        <input 
+                                            className="form-control" 
+                                            placeholder="Комментарий"
+                                            onChange={this.commentChangeHandler}/>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-md-6">
-                                <div className="form-group">
-                                    <label>Адрес</label>
-                                    <input className="form-control" placeholder="Адрес"/>
-                                </div>
-                            </div>
-                        </div><div className="row">
-                            <div className="col-md-6">
-                                <div className="form-group">
-                                    <label>Имя</label>
-                                    <input className="form-control" placeholder="Имя"/>
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="form-group">
-                                    <label>Комментарий</label>
-                                    <input className="form-control" placeholder="Комментарий"/>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" className="btn btn-success">Оформить заказ</button>
-                    </form>
+                            <button type="button" className="btn btn-success" onClick={this.sendMailHandler}>Оформить заказ</button>
+                        </form>
+                        :
+                        ""
+                    }
                 </div>
             </div>
         );

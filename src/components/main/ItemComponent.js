@@ -15,6 +15,8 @@ class ItemComponent extends Component {
     render() {
 
         let attributes = this.props.attributes;
+        const pathToPictures = "https://smart-mirror2.000webhostapp.com/textures/position/";
+        const pathToIngredients = "https://smart-mirror2.000webhostapp.com/textures/ingredients/";
 
         let compositions = [];
         let composition = [];
@@ -22,7 +24,9 @@ class ItemComponent extends Component {
 
         this.props.attributes.composition.forEach(function(item) {
             counter++;
-            composition.push(<td className={item}><img className={item}/></td>);
+            composition.push(<td className={item}>
+                    <img src={pathToIngredients + item + ".png"}/>
+                </td>);
             if(counter === 3) {
                 compositions.push(<tr>{composition}</tr>);
                 counter = 0;
@@ -35,7 +39,7 @@ class ItemComponent extends Component {
 
         return (
             <li className={this.props.position}>
-                <img className={attributes["pic-s"] + " pic"} title=""/>
+                <img className="pic" src={pathToPictures + attributes["pic-s"] + ".jpg"} title=""/>
                 <div className="buy_block">
                     <a onClick={this.buyItemHandler}>
                         <span className="price">

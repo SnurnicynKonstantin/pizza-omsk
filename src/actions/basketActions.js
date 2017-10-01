@@ -1,4 +1,3 @@
-// import slideApi from '../api/slideApi';
 import * as types from './actionTypes';
 
 export function getItems() {
