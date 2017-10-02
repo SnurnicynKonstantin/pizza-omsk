@@ -5,6 +5,18 @@ import Slider from './SliderContainer';
 import Item from '../components/order/ItemComponent';
 import * as basketActions from '../actions/basketActions';
 import * as orderActions from '../actions/orderActions';
+import Modal from 'react-modal';
+
+const customStyles = {
+    content : {
+        top                   : '50%',
+        left                  : '50%',
+        right                 : '50%',
+        bottom                : 'auto',
+        marginRight           : '-50%',
+        transform             : 'translate(-50%, -50%)'
+    }
+};
 
 class OrderContainer extends Component {
 
@@ -19,6 +31,9 @@ class OrderContainer extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            modalIsOpen: false
+        };
         let { dispatch } = this.props;
         this.basketActions = bindActionCreators(basketActions, dispatch);
         this.orderActions = bindActionCreators(orderActions, dispatch);
@@ -28,6 +43,17 @@ class OrderContainer extends Component {
         this.adresChangeHandler = this.adresChangeHandler.bind(this);
         this.nameChangeHandler = this.nameChangeHandler.bind(this);
         this.commentChangeHandler = this.commentChangeHandler.bind(this);
+
+        this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+    }
+
+    closeModal() {
+        this.setState({modalIsOpen: false});
+    }
+
+    openModal() {
+        this.setState({modalIsOpen: true});
     }
 
     deleteItemHandler(key) {
@@ -44,6 +70,7 @@ class OrderContainer extends Component {
 
     sendMailHandler() {
         // this.setState({basket: this.props.basket});
+        this.openModal();
         this.orderActions.sendMail(this.state, this.props.basket);
     }
 
@@ -162,6 +189,16 @@ class OrderContainer extends Component {
                         ""
                     }
                 </div>
+                <Modal
+                    isOpen={this.state.modalIsOpen}
+                    onRequestClose={this.closeModal}
+                    style={customStyles}
+                    contentLabel="Example Modal"
+                >
+                    <h1>Спасибо за ваш заказ.</h1>
+                    <h1>В ближайшее время наш оператор свяжется с вами по указанному номеру.</h1>
+                    <button type="button" className="btn btn-success" onClick={this.closeModal}>Закрыть</button>
+                </Modal>
             </div>
         );
     }

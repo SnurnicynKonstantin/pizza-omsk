@@ -16,7 +16,6 @@ class MenuContainer extends Component {
         // <li id="koktely_button">
         //     <a href="#">Молочные коктейли</a>
         // </li>
-        console.log("path", this.props.location);
         return (
             <div className="top_menu">
                 <div className="block_inner">

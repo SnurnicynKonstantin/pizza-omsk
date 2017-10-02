@@ -1,11 +1,12 @@
-const serverApi = 'https://smart-mirror2.000webhostapp.com/sendMail.php';
+const serverApi = 'http://youpizza55.ru/sendMail.php';
+const realPath = '/sendMail.php';
 
 class OrdeApi {
     static sendMail(data, basket) {
         console.log("DATA", data);
         console.log("BASKET", basket);
 
-        return fetch("/sendMail.php", {
+        return fetch(realPath, {
             method: "POST",
             headers: {
                 'Accept': 'application/json',

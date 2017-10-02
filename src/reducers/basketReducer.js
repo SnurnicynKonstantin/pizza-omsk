@@ -53,6 +53,10 @@ export default function basketReducer(state = [], action) {
             ];
         }
 
+        case types.CLEAR_ORDER: {
+            return [];
+        }
+
 
         default:
             return state;
