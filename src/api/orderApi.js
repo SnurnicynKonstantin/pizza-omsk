@@ -6,7 +6,7 @@ class OrdeApi {
         console.log("DATA", data);
         console.log("BASKET", basket);
 
-        return fetch(realPath, {
+        return fetch(serverApi, {
             method: "POST",
             headers: {
                 'Accept': 'application/json',

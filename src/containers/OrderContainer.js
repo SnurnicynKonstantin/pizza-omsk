@@ -6,6 +6,7 @@ import Item from '../components/order/ItemComponent';
 import * as basketActions from '../actions/basketActions';
 import * as orderActions from '../actions/orderActions';
 import Modal from 'react-modal';
+import { hashHistory } from 'react-router';
 
 const customStyles = {
     content : {
@@ -50,6 +51,7 @@ class OrderContainer extends Component {
 
     closeModal() {
         this.setState({modalIsOpen: false});
+        hashHistory.push('/');
     }
 
     openModal() {
