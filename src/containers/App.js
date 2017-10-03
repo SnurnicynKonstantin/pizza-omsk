@@ -11,7 +11,7 @@ class App extends Component {
     render() {
         return (
             <div className="main">
-                <Menu/>
+                <Menu location={this.props.location}/>
                 <Head/>
                 {this.props.children}
                 <Footer/>

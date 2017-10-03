@@ -23,7 +23,8 @@ class ItemComponent extends Component {
     }
 
     render() {
-        const pathToPictures = "https://smart-mirror2.000webhostapp.com/textures/position/";
+        const pathToPictures000webhostapp = "https://smart-mirror2.000webhostapp.com/textures/position/";
+        const pathToPictures = "http://youpizza55.ru/textures/position/";
         return(
             <tr>
                 <td>

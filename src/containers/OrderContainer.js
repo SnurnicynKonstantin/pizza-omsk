@@ -51,7 +51,7 @@ class OrderContainer extends Component {
 
     closeModal() {
         this.setState({modalIsOpen: false});
-        hashHistory.push('/');
+        this.props.history.push('/');
     }
 
     openModal() {

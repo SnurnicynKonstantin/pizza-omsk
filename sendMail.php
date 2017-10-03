@@ -2,7 +2,8 @@
     $data = file_get_contents("php://input");
     $data = json_decode($data);
 
-    $to = 'ks_on_v@mail.ru';
+    $me = 'ks_on_v@mail.ru';
+    $yan = 'ks_on_v@mail.ru';
 
     $subject = 'Your Pizza Order';
 
@@ -43,7 +44,10 @@
     $message .= '</table>';
     $message .= '</body></html>';
 
-    mail($to, $subject, $message, $headers);
+    mail($me, $subject, $message, $headers);
+    mail($yan, $subject, $message, $headers);
+
+
 
 
     echo $orderSum;

@@ -15,8 +15,10 @@ class ItemComponent extends Component {
     render() {
 
         let attributes = this.props.attributes;
-        const pathToPictures = "https://smart-mirror2.000webhostapp.com/textures/position/";
-        const pathToIngredients = "https://smart-mirror2.000webhostapp.com/textures/ingredients/";
+        const pathToPictures000webhostapp = "https://smart-mirror2.000webhostapp.com/textures/position/";
+        const pathToIngredients000webhostapp = "https://smart-mirror2.000webhostapp.com/textures/ingredients/";
+        const pathToPictures = "http://youpizza55.ru/textures/position/";
+        const pathToIngredients = "http://youpizza55.ru/textures/ingredients/";
 
         let compositions = [];
         let composition = [];
