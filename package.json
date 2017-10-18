@@ -26,6 +26,7 @@
     "react-dom": "^15.0.2",
     "react-google-login-component": "^0.7.0",
     "react-hotkey": "^0.7.0",
+    "react-modal": "2.3.2",
     "react-redux": "4.4.5",
     "react-router": "2.4.0",
     "react-router-redux": "4.0.4",
@@ -34,7 +35,7 @@
     "redux-thunk": "2.0.1",
     "socket.io": "^2.0.3",
     "toastr": "2.1.2",
-    "react-modal": "2.3.2"
+    "webpack-bundle-analyzer": "^2.9.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",

@@ -76,7 +76,7 @@ div.center div.content p {margin-top: 3px;margin-bottom: 20px;}
 
 .head .logo a .divForLogo{
 	width: 400px;
-	height: 54px;
+	height: 70px;
 	background: url('../../textures/pix/logo-01.png') no-repeat;
 }
 
@@ -91,7 +91,7 @@ div.head h1 {margin: 0;}
 .logo {
 	position: absolute;
 	top: 24px;
-	left: 0px;
+	left: 35%;
 }
 
 img.logo_small {
@@ -1491,3 +1491,9 @@ a:hover, a:focus  {
 .lavash-syr:after { content: 'Сырный лаваш'; }
 .sous-sirniy:after { content: 'Сырно-чесночный соус'; }
 .sous-tomatniy-adjika:after { content: 'Томатный соус c аджикой'; }
+.plombir:after { content: 'Пломбир'; }
+.moloko:after { content: 'Молоко'; }
+.klubnichnyj-sirop:after { content: 'Клубничный сироп'; }
+.caramel:after { content: 'Карамельный сироп'; }
+.banan:after { content: 'Банановый сироп'; }
+.chokolad:after { content: 'Шоколадный сироп'; }

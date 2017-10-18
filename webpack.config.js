@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
     debug: true,
@@ -22,8 +23,20 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
-    ],
+        new webpack.NoErrorsPlugin(),
+        new BundleAnalyzerPlugin({
+            analyzerMode: 'server',
+            analyzerHost: 'localhost',
+            analyzerPort: 8888,
+            reportFilename: 'report.html',
+            defaultSizes: 'parsed',
+            openAnalyzer: true,
+            generateStatsFile: false,
+            statsFilename: 'stats.json',
+            statsOptions: null,
+            logLevel: 'info'
+        })
+        ],
     module: {
         loaders: [
             {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},

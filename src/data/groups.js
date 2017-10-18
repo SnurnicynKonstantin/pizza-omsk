@@ -165,7 +165,7 @@ export default [
             }
         ]
     },
-        {
+    {
         'key': 3,
         'name': 'Шаурма',
         'id': 'shaurma',
@@ -264,6 +264,114 @@ export default [
         ]
     },
     {
+        'key': 4,
+        'name': 'Молочные коктейли',
+        'id': 'koktely',
+        'description': 'Вы можете предложить в жаркую летнюю пору что-то лучше, чем прохладный, освежающий молочный коктейль? Ведь это то, что так любят и дети, и взрослые.',
+        'content': [
+            {
+                'pic-s': 'coctail-pink',
+                'pic-b': 'coctail-pink',
+                'key': 23,
+                'name': 'Клубничный коктейль',
+                'price': 70,
+                'info': '0,3 мл.',
+                'description': '',
+                'composition': ['plombir', 'moloko', 'klubnichnyj-sirop']
+            },
+            {
+                'pic-s': 'coctail-pink',
+                'pic-b': 'coctail-pink',
+                'key': 24,
+                'name': 'Клубничный коктейль',
+                'price': 120,
+                'info': '0,5 мл.',
+                'description': '',
+                'composition': ['plombir', 'moloko', 'klubnichnyj-sirop']
+            },
+            {
+                'pic-s': 'coctail-classic',
+                'pic-b': 'coctail-classic',
+                'key': 25,
+                'name': 'Классический коктейль',
+                'price': 70,
+                'info': '0,3 мл.',
+                'description': '',
+                'composition': ['plombir', 'moloko']
+            },
+            {
+                'pic-s': 'coctail-classic',
+                'pic-b': 'coctail-classic',
+                'key': 26,
+                'name': 'Классический коктейль',
+                'price': 120,
+                'info': '0,5 мл.',
+                'description': '',
+                'composition': ['plombir', 'moloko']
+            },
+            {
+                'pic-s': 'coctail-caramel',
+                'pic-b': 'coctail-caramel',
+                'key': 27,
+                'name': 'Карамельный коктейль',
+                'price': 70,
+                'info': '0,3 мл.',
+                'description': '',
+                'composition': ['plombir', 'moloko', 'caramel']
+            },
+            {
+                'pic-s': 'coctail-caramel',
+                'pic-b': 'coctail-caramel',
+                'key': 28,
+                'name': 'Карамельный коктейль',
+                'price': 120,
+                'info': '0,5 мл.',
+                'description': '',
+                'composition': ['plombir', 'moloko', 'caramel']
+            },
+            {
+                'pic-s': 'coctail-yellow',
+                'pic-b': 'coctail-yellow',
+                'key': 29,
+                'name': 'Банановый коктейль',
+                'price': 70,
+                'info': '0,3 мл.',
+                'description': '',
+                'composition': ['plombir', 'moloko', 'banan']
+            },
+            {
+                'pic-s': 'coctail-yellow',
+                'pic-b': 'coctail-yellow',
+                'key': 30,
+                'name': 'Банановый коктейль',
+                'price': 120,
+                'info': '0,5 мл.',
+                'description': '',
+                'composition': ['plombir', 'moloko', 'banan']
+            },
+            {
+                'pic-s': 'coctail-brown',
+                'pic-b': 'coctail-brown',
+                'key': 31,
+                'name': 'Шоколадный коктейль',
+                'price': 70,
+                'info': '0,3 мл.',
+                'description': '',
+                'composition': ['plombir', 'moloko', 'chokolad']
+            },
+            {
+                'pic-s': 'coctail-brown',
+                'pic-b': 'coctail-brown',
+                'key': 32,
+                'name': 'Шоколадный коктейль',
+                'price': 120,
+                'info': '0,5 мл.',
+                'description': '',
+                'composition': ['plombir', 'moloko', 'chokolad']
+            }
+        ]
+    },
+    {
         'key': 5,
         'name': 'Напитки',
         'id': 'napitki',
@@ -272,7 +380,7 @@ export default [
             {
                 'pic-s': 'napitki-03',
                 'pic-b': 'napitki-03',
-                'key': 23,
+                'key': 33,
                 'name': 'Напитки 0.33 мл.',
                 'price': 45,
                 'info': '',
@@ -282,7 +390,7 @@ export default [
             {
                 'pic-s': 'napitki-06',
                 'pic-b': 'napitki-06',
-                'key': 24,
+                'key': 34,
                 'name': 'Напитки 0.6 мл.',
                 'price': 60,
                 'info': '',
@@ -292,7 +400,7 @@ export default [
             {
                 'pic-s': 'napitki-22',
                 'pic-b': 'napitki-22',
-                'key': 25,
+                'key': 35,
                 'name': 'Напитки 2 л.',
                 'price': 150,
                 'info': '',
@@ -302,7 +410,7 @@ export default [
             {
                 'pic-s': 'napitki-05',
                 'pic-b': 'napitki-05',
-                'key': 26,
+                'key': 36,
                 'name': 'Напитки 0.5 мл.',
                 'price': 60,
                 'info': '',
@@ -312,7 +420,7 @@ export default [
             {
                 'pic-s': 'napitki-2',
                 'pic-b': 'napitki-2',
-                'key': 27,
+                'key': 37,
                 'name': 'Напитки 2 л.',
                 'price': 150,
                 'info': '',
@@ -322,7 +430,7 @@ export default [
             {
                 'pic-s': 'napitki-minerale',
                 'pic-b': 'napitki-minerale',
-                'key': 28,
+                'key': 38,
                 'name': 'Aqua Minerale',
                 'price': 45,
                 'info': '0.6 мл.',
@@ -332,7 +440,7 @@ export default [
             {
                 'pic-s': 'napitki-bonaqua',
                 'pic-b': 'napitki-bonaqua',
-                'key': 29,
+                'key': 39,
                 'name': 'Bonaqua',
                 'price': 45,
                 'info': '0.5 мл.',
@@ -350,7 +458,7 @@ export default [
             {
                 'pic-s': 'orbit',
                 'pic-b': 'orbit',
-                'key': 30,
+                'key': 40,
                 'name': 'Жевательная резинка Orbit',
                 'price': 30,
                 'info': '',
@@ -360,7 +468,7 @@ export default [
             {
                 'pic-s': 'skittles',
                 'pic-b': 'skittles',
-                'key': 31,
+                'key': 41,
                 'name': 'Skittles',
                 'price': 35,
                 'info': '',

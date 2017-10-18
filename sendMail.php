@@ -3,7 +3,7 @@
     $data = json_decode($data);
 
     $me = 'ks_on_v@mail.ru';
-    $yan = 'ks_on_v@mail.ru';
+    $yan = '50-16-16@mail.ru';
 
     $subject = 'Your Pizza Order';
 
