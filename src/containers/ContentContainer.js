@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Slider from './SliderContainer';
 import GreenLegend from './GreenLegendContainer';
 import Groups from './GroupsContainer';
+import Basket from '../components/order/BasketComponent';
 
 class ContentContainer extends Component {
 
@@ -12,6 +13,7 @@ class ContentContainer extends Component {
                 <Slider/>
                 <GreenLegend/>
                 <Groups/>
+                <Basket/>
             </div>
         );
     }
