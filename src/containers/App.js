@@ -5,6 +5,7 @@ import Menu from './MenuContainer';
 import Head from './HeadContainer';
 import Content from './ContentContainer';
 import Footer from './FooterContainer';
+import Basket from '../components/basket/BasketComponent';
 
 class App extends Component {
 
@@ -14,6 +15,7 @@ class App extends Component {
                 <Menu location={this.props.location}/>
                 <Head/>
                 {this.props.children}
+                <Basket/>
                 <Footer/>
             </div>
         );
